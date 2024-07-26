@@ -13,3 +13,7 @@ seaborn>=0.12.2
 sqlalchemy>=1.4.37
 sympy>=1.10.1
 xgboost
+gunicorn>=21.2.0
+template-render >= 0.1.0
+flask>=3.0.0
+# streamlit >= 1.31.1
