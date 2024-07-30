@@ -62,14 +62,14 @@ def index():
         embarked = float(request.form["embarked"])
 
         # pclass = st.selectbox("Passenger Class", options=[1, 2, 3])
-# sex = st.selectbox("Sex of the Passenger", options=["Male", "Female"])
-# FamMembers = st.slider("Number of Siblings/Spouses Aboard", min_value=0, max_value=10, step=1)
-# fare = st.slider("Fare Paid", min_value=0.0, max_value=500.0, step=0.1)
-# embarked = st.selectbox("Place of Embarkment", options=["C", "Q", "S"])
+        # sex = st.selectbox("Sex of the Passenger", options=["Male", "Female"])
+        # FamMembers = st.slider("Number of Siblings/Spouses Aboard", min_value=0, max_value=10, step=1)
+        # fare = st.slider("Fare Paid", min_value=0.0, max_value=500.0, step=0.1)
+        # embarked = st.selectbox("Place of Embarkment", options=["C", "Q", "S"])
 
 # # Convertir variables categóricas a valores numéricos
-# sex_n = 1 if sex == "Male" else 0
-# embarked_n = {"C": 0, "Q": 1, "S": 2}[embarked]
+        sex_n = 1 if sex == "Male" else 0
+        embarked_n = {"C": 0, "Q": 1, "S": 2}[embarked]
         
         data = [[pclass, sex, FamMembers, fare, embarked]]
         prediction = str(model.predict(data)[0])
