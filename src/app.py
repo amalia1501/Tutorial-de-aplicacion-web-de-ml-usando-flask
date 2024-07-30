@@ -56,10 +56,10 @@ def index():
         
         # Obtain values from form
         pclass = float(request.form["pclass"])
-        sex = float(request.form["sex"])
+        sex = request.form["sex"]
         FamMembers = float(request.form["FamMembers"])
         fare = float(request.form["fare"])
-        embarked = float(request.form["embarked"])
+        embarked = request.form["embarked"]
 
         # pclass = st.selectbox("Passenger Class", options=[1, 2, 3])
         # sex = st.selectbox("Sex of the Passenger", options=["Male", "Female"])
