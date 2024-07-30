@@ -55,11 +55,11 @@
     <form action="/" method="post">
         Passenger Class : <input type="number" step="1" min="1" max="3" name="pclass" required><br><br>
         <!-- st.selectbox("Passenger Class", options=[1, 2, 3]) -->
-        Sex of the Passenger :<input type="text" pattern="[FM]" name="sex" required>
-            <!-- <select name="sex" required>
+        <!-- Sex of the Passenger :<input type="text" pattern="[FM]" name="sex" required> -->
+            <select name="sex" required>
                 <option value="F">Female</option>
                 <!-- <option value="M">Male</option> -->
-            </select> -->
+            </select>
         <!-- <input type="text" pattern="[FM]" name="sex" required> -->
         <br><br>
         <!-- st.selectbox("Sex of the Passenger", options=["Male", "Female"]) -->
@@ -68,11 +68,11 @@
         Fare :<input type="number" step="0.1" min="0" max="500" name="fare" required><br><br>
          <!-- st.slider("Fare Paid", min_value=0.0, max_value=500.0, step=0.1) -->
         Place of Embarkment :<input type="text" pattern="[CQS]" name="embarked" required>
-        <!-- <select name="embarked" required>
+        <select name="embarked" required>
             <option value="C">C</option>
-            <!-- <option value="Q">Q</option>
-            <option value="S">S</option> -->
-        </select> -->
+            <option value="Q">Q</option>
+            <option value="S">S</option>
+        </select>
         <!-- <input type="text" pattern="[CQS]" name="embarked" required> -->
         <br><br>
          <!-- st.selectbox("Place of Embarkment", options=["C", "Q", "S"]) -->
