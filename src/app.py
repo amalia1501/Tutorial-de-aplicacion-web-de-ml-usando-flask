@@ -71,7 +71,7 @@ def index():
         sex_n = 1 if sex == "Male" else 0
         embarked_n = {"C": 0, "Q": 1, "S": 2}[embarked]
         
-        data = [[pclass, sex, FamMembers, fare, embarked]]
+        data = [[pclass, sex_n, FamMembers, fare, embarked_n]]
         prediction = str(model.predict(data)[0])
         pred_class = class_dict[prediction]
         
