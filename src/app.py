@@ -9,7 +9,7 @@ from pickle import load
 app = Flask(__name__)
 
 # Obtengo el modelo
-model = load(open("../models/workspace/Tutorial-de-aplicacion-web-de-ml-usando-flask/src/decision_tree_classifier_default_42.sav", "rb"))
+model = load(open("../models/decision_tree_classifier_default_42.sav", "rb"))
 
 # Diccionario con la prediccion 
 class_dict = {
